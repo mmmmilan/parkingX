@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQhVs2BjflECxoLbuwWxomQAAAAACAAAAAAAQZgAAAAEAACAAAAAcFmcCFwTtMzW3dBu8CeqSu6CpS59vp3n6PpQoXV7jxQAAAAAOgAAAAAIAACAAAAAmItACbfhxrmovw7IyQXOpFTsdwh123DpOIhKHDaba2CAAAAA9PMxZ140KV6tNmBrqaUmiJbs5Ob8nu7m16RB5Mv0Q6EAAAADVVwmqFl2THfA7oKJBc4GuaQ2x742T4PKOlcT4lvOet4nComnK8G105dy6wcLNG5TZg2VNTP/JmArOziNdsmJy</EncryptedPassword>
+    <_PublishTargetUrl>ftp://parking2017.somee.com/wwwroot</_PublishTargetUrl>
+  </PropertyGroup>
+</Project>

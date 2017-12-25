@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href='http://fonts.googleapis.com/css?family=Play:400,700&subset=latin-ext' rel='stylesheet' type='text/css'>
+
+    <style>
+        .c0 {
+            width: 4.3em;
+            height: 7em;
+            border: 1px solid red;
+            border-radius: 0.5em;
+            border-color: black;
+            margin: 0.4em;
+            float: left;
+            color: rgb(244,223,174);
+            background-color: rgb(244,223,174);
+        }
+
+        .c1 {
+            width: 4.3em;
+            height: 7em;
+            border: 1px solid red;
+            border-radius: 0.5em;
+            border-color: rgb(244,223,174);
+            margin: 0.4em;
+            float: left;
+            background-color: black;
+            color: rgb(244,223,174);
+        }
+
+        .c2 {
+            width: 4.3em;
+            height: 7em;
+            border: 1px solid red;
+            border-color: black;
+            border-radius: 0.5em;
+            margin: 0.4em;
+            float: left;
+            background-color: yellow;
+            color: black;
+        }
+
+        #span1 {
+            font-size: 15px;
+        }
+
+        * {
+            font-family: 'Play';
+            font-style: normal;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Parking", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Parking", "Index", "Parking")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - by mmmmmilan@gmail.com</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

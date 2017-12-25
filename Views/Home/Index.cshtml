@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h2 style="align-content:center">Welcome neighbours!!!</h2>
+   
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <p>          
+        </p>
+    </div>
+
+    <div class="col-md-8">
+        <h4>If you want to occupy/release parking place, you must <a href="/Account/Login">Log-in</a> first . . . </h4>
+        <a href="/Account/Login"><img src="~/parking2.jpg" width="672" height="282" /></a>
+        <hr />
+        <span id="spanPic" style="float:left;clear:right;color:red;background-color:yellow;width:672px;">At this momment available:<strong>   @ViewBag.zi park.spots</strong></span><br />
+        <hr />
+    </div>
+    
+    <div class="col-md-2">
+    </div>
+</div>
